@@ -1,0 +1,121 @@
+---
+const links = [
+  {
+    name: 'Institucional',
+    url: '/institucional',
+    dropdown: [
+      { name: 'Historia', url: '/history' },
+      { name: 'Mision y Visión', url: '/misionvision' },
+      { name: 'Directorio Institucional', url: '/members' },
+      { name: 'Galeria de Imagenes', url: '/galeria' }
+    ]
+  },
+  {
+    name: 'Programas de Estudio',
+    url: '/programa_estudios',
+    dropdown: [
+      { name: 'Educacion Inicial Intercultural Bilingue', url: '/programa_de_estudios/1' },
+      { name: 'Educacion Primaria Intercultural Bilingue', url: '/programa_de_estudios/2' },
+      { name: 'Idiomas Especialidad Ingles', url: '/programa_de_estudios/3' }
+    ]
+  },
+  {
+    name: 'Procesos Académicos',
+    url: '/procesos_academicos',
+    dropdown: [
+      { name: 'Proceso de Admision', url: '/proceso_academico/Proceso_de_Admisión' },
+      { name: 'Proceso de Matricula', url: '/proceso_academico/Proceso_de_Matrícula' },
+      { name: 'Proceso de Titulacion', url: '/proceso_academico/Proceso_de_Titulación' },
+      { name: 'Formacion Continua', url: '/proceso_academico/Formación_Continua' }
+    ]
+  },
+  {
+    name: 'Servicios',
+    url: '/entornoVirtual',
+    dropdown: [
+      { name: 'Entornos Virtuales de Aprendizaje', url: '/entornoVirtual' },
+      { name: 'Seguimiento de Egresados', url: '/servicios/Seguimiento_de_Egresados' },
+      { name: 'Biblioteca & Repositorio', url: '/servicios/Biblioteca_&_Repositorio' },
+      { name: 'Bienestar y Empleabilidad', url: '/servicios/Bienestar_y_Empleabilidad' }
+    ]
+  },
+  {
+    name: 'Portal Transparencia',
+    url: '/portalTransparencia',
+  },
+  {
+    name: 'Noticias',
+    url: '/noticias',
+  }
+];
+---
+
+<header x-data="{ shrink: false, mobileMenuOpen: false }" @scroll.window="shrink = (window.pageYOffset > 100)" class="fixed top-0 left-0 w-full z-50 bg-zinc-900 text-white shadow-md transition-all duration-500" :class="{ 'py-3': shrink, 'py-8': !shrink }">
+  <nav class="container mx-auto flex justify-between items-center">
+    <a href="/" @click.prevent="location.href = '/'">
+      <img src="/./logo_-removebg-preview.png" alt="Logo" class="h-10 transition-transform duration-500 transform ease-in-out" :class="shrink ? 'scale-100' : 'scale-150'" />
+    </a>
+    <div class="hidden space-x-4 md:flex">
+      {links.map(link => (
+        <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
+          <a :class="open ? 'bg-red text-black' : 'text-black'" href={link.url} class="py-2 px-4 hover:text-white hover:bg-red rounded focus:outline-none transition-colors duration-300">
+            {link.name}
+            {link.dropdown && (
+              <svg class="inline-block ml-2 h-4 w-4" :class="open ? 'transform rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            )}
+          </a>
+          {link.dropdown && (
+            <div x-show="open" x-transition class="absolute left-0 mt-2 w-48 bg-red rounded-md shadow-lg">
+              <div class="py-2 bg-red rounded-md shadow-xs">
+                {link.dropdown.map(item => (
+                  <a href={item.url} class="block px-4 py-2 text-black hover:bg-red-700 hover:text-black hover:bg-zinc-900 rounded-md transition-colors duration-300">
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+    <div class="md:hidden">
+      <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="fixed inset-0 z-40 bg-zinc-900 bg-opacity-90 flex flex-col items-center justify-center text-center text-white">
+      <button @click="mobileMenuOpen = false" class="absolute top-4 right-4 text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      {links.map(link => (
+        <div x-data="{ open: false }" class="w-full">
+          <div @click.prevent="open = !open" class="block py-4 text-xl text-black w-full text-center hover:bg-red-600 transition-colors duration-300">
+            {link.name}
+            {link.dropdown && (
+              <svg class="inline-block ml-2 h-4 w-4" :class="open ? 'transform rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            )}
+          </div>
+          {link.dropdown && (
+            <div x-show="open" x-transition class="w-full bg-red-500">
+              {link.dropdown.map(item => (
+                <a href={item.url} class="block py-2 text-lg text-black hover:bg-red-700 hover:text-white transition-colors duration-300">
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </nav>
+</header>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.7.1/dist/cdn.min.js" defer></script>

@@ -1,0 +1,110 @@
+{
+    "team":
+    [
+        {
+            "title": "DIRECTOR GENERAL",
+            "name": "PARI ARCAYA, JOSÉ HORACIO",
+            "profile": "https://aib.edu.pe/wp-content/uploads/2023/05/45150025_1951149584973086_6098381702327959552_n-150x150.jpg",
+            "correo": "joselopari.20@gmail.com",
+            "telefono": "910124372"
+        },
+        {
+            "title": "JEFE DE UNIDAD ACADÉMICA",
+            "name": "PARIZACA CHAMBILLA, SABAS",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "JEFE DE UNIDAD DE ADMINISTRACIÓN",
+            "name": "CHALCO CHAMBILLA, ANA MARIA",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "SECRETARIO ACADÉMICO",
+            "name": "CENTENO PALOMINO, RICHARD",
+            "profile": "https://aib.edu.pe/wp-content/uploads/2023/06/RichardCenteno-R.jpg",
+            "correo": "centenori@gmail.com",
+            "telefono": "944958793"
+        },
+        {
+            "title": "COORDINADORA DE ÁREA ACADÉMICA DE EDUCACIÓN INICIAL INTERCULTURAL BILINGÜE",
+            "name": "NINA MARCA, YOSY",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "COORDINADOR DE ÁREA ACADÉMICA DE EDUCACIÓN PRIMARIA INTERCULTURAL BILINGÜE",
+            "name": "MAMANI CHOQUEHUANCA, HENRY",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "COORDINADORA DE ÁREA DE EDUCACIÓN EN IDIOMAS, ESPECIALIDAD INGLÉS",
+            "name": "MAMANI ZENTENO, JENNY MARISOL",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "COORDINADOR DE ÁREA DE CALIDAD",
+            "name": "MAYTA LARICANO, ZENON",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "JEFE UNIDAD DE FORMACIÓN CONTINUA",
+            "name": "AGUILAR ESQUICHE, ROSA BEL",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "JEFE DE UNIDAD DE INVESTIGACIÓN",
+            "name": "LOPEZ CASTILLO, ROCIO",
+            "profile": "./",
+            "correo": "",
+            "telefono": ""
+        },
+        {
+            "title": "JEFE DE UNIDAD DE BIENESTAR Y EMPLEABILIDAD",
+            "name": "MORALES PACHECO, NATALIA LUISA",
+            "profile": "./",
+            "correo": "joselopari.20@gmail.com",
+            "telefono": "910124372"
+        }
+
+    ],
+    "process":
+    [
+        {
+            "label": "Consultation",
+            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        },
+        {
+            "label": "Research",
+            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        },
+        {
+            "label": "Implementation",
+            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        },
+        {
+            "label": "Optimization",
+            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        },
+        {
+            "label": "Reporting",
+            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        },
+        {
+            "label": "Improvement",
+            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+        }
+    ]
+}

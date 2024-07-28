@@ -1,0 +1,35 @@
+---
+import Container from "../../components/Container.astro";
+import Layout from '../../layouts/Layout.astro';
+import servicesData from '../../components/Data/servicios.json';
+
+export async function getStaticPaths() {
+  return servicesData.map(service => ({
+    params: { id: service.id.toString() },
+  }));
+}
+
+const { id } = Astro.params;
+const service = servicesData.find(service => service.id.toString() === id);
+
+if (!service) {
+  throw new Error(`Service with id ${id} not found`);
+}
+
+const { title, description } = service;
+---
+
+<Layout title="Servicio">
+  <main class="space-y-40 mb-40 pt-24">
+    <Container>
+      <section class="bg-white">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">{title}</h2>
+            <p class="mb-4">{description}</p>
+          </div>
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>

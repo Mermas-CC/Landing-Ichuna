@@ -1,0 +1,29 @@
+{
+    "titulo": "PORTAL DE TRANSPARENCIA",
+    "url": "/portal-transparencia",
+    "articulo42": [
+      "Relación y número de becas y créditos educativos otorgados en el año en curso.",
+      "Relación de derechos, tasas, montos de pensiones u otros pagos que deben realizar los estudiantes por toda índole, según corresponda.",
+      "Proyectos de investigación y los gastos que genere.",
+      "Conformación del cuerpo docente, sus respectivas hojas de vida actualizadas y las materias en las que se desempeña.",
+      "El número de ingresantes, matriculados y egresados por año y programa formativo.",
+      "Relación de programas de estudios, sus horarios y procesos de matrícula.",
+      "Periodo de vigencia de su licenciamiento.",
+      "El estatuto o reglamento institucional.",
+      "Inversiones, reinversiones, donaciones, obras de infraestructura, recursos de diversa fuente, entre otros, para IES y EES públicos.",
+      "El texto único de procedimientos administrativos para IES y EES públicos."
+    ],
+    "anioAcademico2022": [
+      { "title": "Relación y número de becas y créditos educativos otorgados en el año en curso.", "url": "#" },
+      { "title": "Relación de derechos, tasas, montos de pensiones u otros pagos que deben realizar los estudiantes por toda índole, según corresponda.", "url": "#" },
+      { "title": "Proyectos de investigación y los gastos que genere.", "url": "#" },
+      { "title": "Conformación del cuerpo docente, sus respectivas hojas de vida actualizadas y las materias en las que se desempeña.", "url": "#" },
+      { "title": "El número de ingresantes, matriculados y egresados por año y programa formativo.", "url": "#" },
+      { "title": "Relación de programas de estudios, sus horarios y procesos de matrícula.", "url": "#" },
+      { "title": "Periodo de vigencia de su licenciamiento.", "url": "#" },
+      { "title": "El estatuto o reglamento institucional.", "url": "#" },
+      { "title": "Inversiones, reinversiones, donaciones, obras de infraestructura, recursos de diversa fuente, entre otros, para IES y EES públicos.", "url": "#" },
+      { "title": "El texto único de procedimientos administrativos para IES y EES públicos.", "url": "#" }
+    ]
+  }
+  

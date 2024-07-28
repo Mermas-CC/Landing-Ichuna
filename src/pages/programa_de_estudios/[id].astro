@@ -1,0 +1,109 @@
+---
+import Container from "../../components/Container.astro";
+import Layout from '../../layouts/Layout.astro';
+import articlesData from '../../components/Data/articles.json';
+
+export async function getStaticPaths() {
+  return articlesData.map(article => ({
+    params: { id: article.id.toString() },
+  }));
+}
+
+const { id } = Astro.params;
+const article = articlesData.find(article => article.id.toString() === id);
+
+if (!article) {
+  throw new Error(`Article with id ${id} not found`);
+}
+
+const { title, publish_date, description, author, authorImage, duration, hours, credits, professionalTitle, profile, planImg1, planImg2, planImg3, planImg4, planImg5, curriculumLink } = article;
+export const prerender = true;
+---
+
+<Layout title="Programa de Estudios">
+  <main class="space-y-40 mb-40 pt-24">
+    <Container>
+      <section class="bg-white">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">{title}</h2>
+            <p class="mb-4">{description}</p>
+            <div class="overflow-x-auto mt-6">
+              <table class="min-w-full divide-y divide-gray-200">
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Duración</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">: {duration}</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nº de Horas</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">: {hours}</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nº de Créditos</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">: {credits}</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Título Profesional</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">: {professionalTitle}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex justify-between items-center mt-6">
+              <div class="flex items-center space-x-4">
+                <img src={authorImage} alt={author} class="h-10 w-10 rounded-full" />
+                <span class="font-medium">{author}</span>
+              </div>
+              <span class="text-sm">{publish_date}</span>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4 mt-8">
+            <img class="w-3/5 rounded-lg" src={planImg1} alt="Plan de estudios 1">
+            <img class="w-3/5 rounded-lg" src={planImg2} alt="Plan de estudios 2">
+            <img class="w-3/5 rounded-lg" src={planImg3} alt="Plan de estudios 3">
+            <img class="w-3/5 rounded-lg" src={planImg4} alt="Plan de estudios 4">
+            {planImg5 && <img class="w-3/5 rounded-lg" src={planImg5} alt="Plan de estudios 5" />}
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white mt-16">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Perfil del egresado</h2>
+            <p class="mb-4">{profile}</p>
+            <div class="flex flex-col items-center gap-4 mt-8">
+              <img class="w-3/5 rounded-lg" src={planImg1} alt="Plan de estudios 1">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white mt-16">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg text-center">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Plan de estudios</h2>
+            <div class="flex flex-col items-center gap-4 mt-8">
+              <img class="w-3/5 rounded-lg" src={planImg2} alt="Plan de estudios 2">
+              <img class="w-3/5 rounded-lg" src={planImg3} alt="Plan de estudios 3">
+              <img class="w-3/5 rounded-lg" src={planImg4} alt="Plan de estudios 4">
+              {planImg5 && <img class="w-3/5 rounded-lg" src={planImg5} alt="Plan de estudios 5" />}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white mt-16">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg text-center">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">DISEÑO CURRICULAR BÁSICO NACIONAL</h2>
+            <a href={curriculumLink} class="px-9 py-5 bg-zinc-900 hover:bg-red text-white hover:text-black rounded-2xl inline-flex" rel="noopener noreferrer" target="_blank">
+              <h2 class="text-center text-xl font-normal leading-7">Ver más</h2>
+            </a>
+          </div>
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>

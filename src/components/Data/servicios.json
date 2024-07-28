@@ -1,0 +1,92 @@
+[
+  {
+    "id": "Entornos_Virtuales_de_Aprendizaje",
+    "title": "Entornos Virtuales de Aprendizaje",
+    "description": "Plataforma online que ofrece acceso a cursos, materiales educativos y herramientas interactivas para mejorar el proceso de aprendizaje.",
+    "image": "https://link_to_image.com/image.png",
+    "sections": [
+      {
+        "title": "Tutoriales para docentes",
+        "items": [
+          {
+            "name": "1. Acceso a la cuenta de Microsoft 365",
+            "link": "https://link_to_tutorial1.com"
+          },
+          {
+            "name": "2. Correo electrónico Outlook",
+            "link": "https://link_to_tutorial2.com"
+          },
+          {
+            "name": "3. Trabajo en la nube OneDrive",
+            "link": "https://link_to_tutorial3.com"
+          },
+          {
+            "name": "4. Sesiones de clase con Microsoft Teams",
+            "link": "https://link_to_tutorial4.com"
+          },
+          {
+            "name": "5. Block de notas OneNote en el aula",
+            "link": "https://link_to_tutorial5.com"
+          }
+        ]
+      },
+      {
+        "title": "Tutoriales para estudiantes",
+        "items": [
+          {
+            "name": "1. Acceso a la cuenta de Microsoft 365",
+            "link": "https://link_to_tutorial1.com"
+          },
+          {
+            "name": "2. Correo electrónico Outlook",
+            "link": "https://link_to_tutorial2.com"
+          },
+          {
+            "name": "3. Trabajo en la nube OneDrive",
+            "link": "https://link_to_tutorial3.com"
+          },
+          {
+            "name": "4. Sesiones de clase con Microsoft Teams",
+            "link": "https://link_to_tutorial4.com"
+          }
+        ]
+      },
+      {
+        "title": "Tutoriales para administrativos",
+        "items": [
+          {
+            "name": "1. Acceso a la cuenta de Microsoft 365",
+            "link": "https://link_to_tutorial1.com"
+          },
+          {
+            "name": "2. Correo electrónico Outlook",
+            "link": "https://link_to_tutorial2.com"
+          },
+          {
+            "name": "3. Trabajo en la nube OneDrive",
+            "link": "https://link_to_tutorial3.com"
+          },
+          {
+            "name": "4. Trabajo administrativo con Microsoft Teams",
+            "link": "https://link_to_tutorial4.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Seguimiento_de_Egresados",
+    "title": "Seguimiento de Egresados",
+    "description": "Programa diseñado para mantener el contacto con los egresados, evaluar su desarrollo profesional y proporcionar apoyo continuo en su carrera."
+  },
+  {
+    "id": "Biblioteca_&_Repositorio",
+    "title": "Biblioteca & Repositorio",
+    "description": "Acceso a una vasta colección de libros, artículos, revistas y otros recursos académicos tanto en formato físico como digital."
+  },
+  {
+    "id": "Bienestar_y_Empleabilidad",
+    "title": "Bienestar y Empleabilidad",
+    "description": "Servicios y actividades dedicados a promover el bienestar físico y mental de los estudiantes, así como apoyo en la búsqueda de empleo y desarrollo profesional."
+  }
+]

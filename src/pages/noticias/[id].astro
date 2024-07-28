@@ -1,0 +1,35 @@
+---
+import Container from "../../components/Container.astro";
+import Layout from '../../layouts/Layout.astro';
+import noticiasData from '../../components/Data/noticias.json';
+
+export async function getStaticPaths() {
+  return noticiasData.map(noticia => ({
+    params: { id: noticia.id.toString() },
+  }));
+}
+
+const { id } = Astro.params;
+const noticia = noticiasData.find(noticia => noticia.id.toString() === id);
+
+if (!noticia) {
+  throw new Error(`Noticia with id ${id} not found`);
+}
+
+const { titulo, fecha, imagen, descripcion } = noticia;
+---
+
+<Layout title={titulo}>
+  <main class="space-y-40 mb-40 pt-24">
+    <Container>
+      <section class="bg-white">
+        <div class="text-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">{titulo}</h2>
+          {imagen && <img src={imagen} alt={titulo} class="mx-auto mb-4 w-full h-96 object-contain" />}
+          <p class="mb-4 text-lg text-gray-700">{fecha}</p>
+          <p class="mb-8 text-lg text-gray-700">{descripcion}</p>
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>

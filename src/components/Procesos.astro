@@ -1,0 +1,41 @@
+---
+// Testimonial.astro
+import testimonialsData from '../components/Data/procesos.json';
+import Container from './Container.astro';
+import Topic from './Topic.astro';
+---
+
+<Container>
+    <div class="relative flex flex-col items-center mt-16" id="institucional">
+        <Topic title="Procesos Academicos" description="">
+        </Topic>
+      </div>
+      <div class="relative flex flex-col items-center mb-8" id="institucional">
+        <div class="flex items-center my-4 w-full">
+          <div class="flex-grow border-t border-gray-300"></div>
+          <span class="mx-4 text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+          </span>
+          <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+        Pruebita de  Procesos Academicos
+      </div>
+
+
+{testimonialsData.map(({ quote, name, fecha }) => (
+  <div class="flex-row items-center my-6 p-14 bg-black text-white rounded-[45px]">
+      <div class="justify-items-center relative w-full border border-red rounded-3xl">
+          <div class="p-4 md:p-10">
+
+            <span class="text-red text-base md:text-5xl font-medium">{name}<br/></span>
+              <p class="items-center justify-center text-white text-sm md:text-lg font-normal mb-4">
+                  {quote}
+              </p>
+              <span class="text-white text-lg font-normal">{fecha}</span>
+          </div>
+      </div>
+  </div>
+))}
+</Container>

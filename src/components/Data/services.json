@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name1": "Historia",
+        "name2": "",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/aw.svg",
+        "link": "./history",
+        "image": "./services/01.svg"
+    },
+    {
+        "id": 2,
+        "name1": "Mision Vicion",
+        "name2": "",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "./misionvision",
+        "image": "./services/02.svg"
+    },
+    {
+        "id": 3,
+        "name1": "Directorio Institucional",
+        "name2": "",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "./members",
+        "image": "./services/03.svg"
+    },
+    {
+        "id": 4,
+        "name1": "Organigrama institucional",
+        "name2": "",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/aw.svg",
+        "link": "./",
+        "image": "./services/04.svg"
+    },
+    {
+        "id": 5,
+        "name1": "Resolucion de relevacion",
+        "name2": "",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/aw.svg",
+        "link": "./",
+        "image": "./services/05.svg"
+    },
+    {
+        "id": 6,
+        "name1": "Galeria de fotos y video",
+        "name2": "",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "./galeria",
+        "image": "./services/06.svg"
+    }
+]

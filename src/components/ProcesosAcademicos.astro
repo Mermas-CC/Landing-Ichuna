@@ -1,0 +1,41 @@
+---
+import Container from "../components/Container.astro";
+import articlesData from './Data/procesos_academicos.json';
+import Topic from "./Topic.astro";
+---
+
+<Container>
+  <div class="relative flex flex-col items-center mt-16" id="institucional">
+    <Topic title="Procesos Academicos" description="" />
+  </div>
+  <div class="relative flex flex-col items-center mb-8" id="institucional">
+    <div class="flex items-center my-4 w-full">
+      <div class="flex-grow border-t border-gray-300"></div>
+      <span class="mx-4 text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+        </svg>
+      </span>
+      <div class="flex-grow border-t border-gray-300"></div>
+    </div>
+    Pruebita de Procesos Academicos
+  </div>
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="grid gap-8 lg:grid-cols-2">
+      {articlesData.map(({ id, title, description }) => (
+        <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card" >
+          <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h2>
+          <p class="mb-5 font-light text-gray-500" style="white-space: pre-line">{description}</p>
+          <div class="flex justify-between items-center">
+            <a href={`/proceso_academico/${id}`} class="inline-flex items-center font-medium text-black hover:text-red">
+              Read more
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>  
+  </div>
+</Container>

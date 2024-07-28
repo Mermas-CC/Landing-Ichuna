@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "titulo": "Noticia 1",
+      "imagen": "https://aib.edu.pe/wp-content/uploads/2023/06/IMAGEN-ICHUNA-historia-re-1024x325.jpg",
+      "fecha": "2024-07-24",
+      "url": "https://example.com/noticia-1",
+      "urlImg": "https://example.com/noticia-1-img",
+      "descripcion": "Descripción de la Noticia 1."
+    },
+    {
+      "id": 2,
+      "titulo": "Noticia 2",
+      "imagen": "https://aib.edu.pe/wp-content/uploads/2023/06/jose-1024x1024.jpg",
+      "fecha": "2024-07-25",
+      "url": "https://example.com/noticia-2",
+      "urlImg": "https://example.com/noticia-2-img",
+      "descripcion": "Descripción de la Noticia 2."
+    },
+    {
+      "id": 3,
+      "titulo": "Noticia 3",
+      "imagen": "https://aib.edu.pe/wp-content/uploads/2023/06/jose-1024x1024.jpg",
+      "fecha": "2024-07-26",
+      "url": "https://example.com/noticia-3",
+      "urlImg": "https://example.com/noticia-3-img",
+      "descripcion": "Descripción de la Noticia 3."
+    },
+    {
+        "id": 3,
+        "titulo": "Noticia 3",
+        "imagen": "https://aib.edu.pe/wp-content/uploads/2023/06/jose-1024x1024.jpg",
+        "fecha": "2024-07-26",
+        "url": "https://example.com/noticia-3",
+        "urlImg": "https://example.com/noticia-3-img",
+        "descripcion": "Descripción de la Noticia 3."
+      }
+]

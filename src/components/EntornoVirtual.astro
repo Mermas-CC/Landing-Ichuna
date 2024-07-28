@@ -1,0 +1,132 @@
+---
+import Container from "./Container.astro";
+import Layout from "../layouts/Layout.astro";
+
+const service = {
+  id: "Entornos_Virtuales_de_Aprendizaje",
+  title: "Entornos Virtuales de Aprendizaje",
+  description: "Microsoft 365 está diseñado para ayudarte a mejorar la productividad con las aplicaciones innovadoras de Office, servicios inteligentes en la nube y seguridad de primer nivel.",
+  image: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+  sections: [
+    {
+      title: "Tutoriales para docentes",
+      items: [
+        {
+          name: "1. Acceso a la cuenta de Microsoft 365",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EU5Mf1RkxSBJvUwIW3PgbhQBrHCpFrtGX0-3H3jXpK_n2g?e=nH4dVz"
+        },
+        {
+          name: "2. Correo electrónico Outlook",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EWQMZAwDsJBBvWmaHcFRSJUBlbCgY4CPwQ3vwHtL_NqyMQ?e=gNQ4Vb"
+        },
+        {
+          name: "3. Trabajo en la nube OneDrive",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EfUd8GoEwm1Cq-lcz4U1ca4BT83SxwF-qvkXtjXJMr0fAQ?e=yg3nfl"
+        },
+        {
+          name: "4. Sesiones de clase con Microsoft Teams",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/ETiNBWCFXxBNvnslYAY9LtcBwpnv90PKK5grB6T32Ue2AA?e=E7HM9D"
+        },
+        {
+          name: "5. Block de notas OneNote en el aula",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EbTUmUTpukpLhAD7CQdPybUB_TdUie4TFVyk2YDxoukXQQ?e=WqdS2J"
+        }
+      ]
+    },
+    {
+      title: "Tutoriales para estudiantes",
+      items: [
+        {
+          name: "1. Acceso a la cuenta de Microsoft 365",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EW-MBJwkil5OoiotJWbhEVsB3FM5qofUevMaF0yOSq5SIQ?e=cAqqvC"
+        },
+        {
+          name: "2. Correo electrónico Outlook",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/Ee38R6CLXHxMnZ_j_u5T0Q8BV4i71xybz-JdoUvm0fwg2w?e=BWf2tB"
+        },
+        {
+          name: "3. Trabajo en la nube OneDrive",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EXXJUfe6VpBIvqLj5Y5XJvMBBq-1iiCLpZDdf7BPv-j11g?e=Ca1uue"
+        },
+        {
+          name: "4. Sesiones de clase con Microsoft Teams",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/ES_-osEEsGxBj7coVgsbKMYBJuqPHfW6yrzgwMpEB9yaIA?e=3Mebxc"
+        }
+      ]
+    },
+    {
+      title: "Tutoriales para administrativos",
+      items: [
+        {
+          name: "1. Acceso a la cuenta de Microsoft 365",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EW2Lrs4C4uFLsEnhAU3IWb0BHHMnMbi8uoUPVR5_HZiQiw?e=cPZoiJ"
+        },
+        {
+          name: "2. Correo electrónico Outlook",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EUQfkngM1BlNlX9oxdT7PtkBTjt4OcMtwCE3RCOh2nBmpw?e=vst1uf"
+        },
+        {
+          name: "3. Trabajo en la nube OneDrive",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EciTOPuo6YVAgmZZiISNxYcBrOUqMmypX7h1mA_5m37eIA?e=QykDRp"
+        },
+        {
+          name: "4. Trabajo administrativo con Microsoft Teams",
+          link: "https://iesppaibe-my.sharepoint.com/:b:/g/personal/dinamizadoreva_aib_edu_pe/EXfeJK1gOXBCvf_FR30HUBUB92Eg94R2rH2iWOFn0RM4tA?e=Ll5NbB"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<style>
+  .download-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .download-icon:hover {
+    transform: rotate(90deg);
+  }
+</style>
+
+<Layout title={service.title}>
+  <main class="space-y-40 mb-40 pt-24">
+    <Container>
+      <section class="bg-white">
+        <div class="text-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">{service.title}</h2>
+          {service.image && <img src={service.image} alt="Logo" class="mx-auto mb-4 w-40 h-40 object-contain" />}
+          <p class="mb-8 text-lg text-gray-700">{service.description}</p>
+
+          {service.sections && service.sections.map((section, sectionIndex) => (
+            <div class="my-8" >
+              <h3 class="text-2xl font-semibold text-gray-800">{section.title}</h3>
+              <table class="min-w-full divide-y divide-gray-200 mt-4">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{section.title}</th>
+                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Descargas</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  {section.items.map((item, itemIndex) => (
+                    <tr >
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700 text-left">{item.name}</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-right text-sm">
+                        <a href={item.link} class="text-red-600 hover:text-red-900">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="download-icon h-6 w-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))}
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>

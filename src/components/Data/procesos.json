@@ -1,0 +1,24 @@
+
+[
+    {
+      "quote": "Ejemplo de introduccion de ejemplo de admision",
+      "name": "Proceso de Admision",
+      "fecha": "24-07-2024"
+    },
+    {
+        "quote": "Ejemplo de introduccion de ejemplo de matricula",
+        "name": "Proceso de Matricula",
+        "fecha": "24-07-2024"
+      },
+      {
+        "quote": "Ejemplo de introduccion de ejemplo de titulacion",
+        "name": "Proceso de Titulacion",
+        "fecha": "24-07-2024"
+      },
+      {
+        "quote": "Ejemplo de introduccion de ejemplo de continua",
+        "name": "Proceso de Continua",
+        "fecha": "24-07-2024"
+      }
+  ]
+  

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "Proceso_de_Admisión",
+    "title": "Proceso de Admisión",
+    "description": "El proceso de admisión está diseñado para evaluar las competencias y habilidades de los candidatos a través de exámenes escritos, entrevistas y revisión de antecedentes académicos."
+  },
+  {
+    "id": "Proceso_de_Matrícula",
+    "title": "Proceso de Matrícula",
+    "description": "El proceso de matrícula incluye la inscripción en los cursos, el pago de las tarifas correspondientes y la entrega de los documentos necesarios para completar la inscripción."
+  },
+  {
+    "id": "Proceso_de_Titulación",
+    "title": "Proceso de Titulación",
+    "description": "El proceso de titulación abarca la presentación de la tesis, la defensa oral ante un jurado y la realización de los trámites administrativos necesarios para la obtención del título."
+  },
+  {
+    "id": "Formación_Continua",
+    "title": "Formación Continua",
+    "description": "La formación continua ofrece una variedad de cursos y talleres dirigidos a la actualización y perfeccionamiento profesional de los egresados, adaptándose a las demandas del mercado laboral."
+  }
+]

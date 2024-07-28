@@ -1,0 +1,89 @@
+---
+import Container from "../components/Container.astro";
+import portalTransparenciaData from '../components/Data/portalTransparencia.json';
+---
+
+<Container>
+  <div class="relative flex flex-col items-center mt-16">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">{portalTransparenciaData.titulo}</h1>
+    <h2 class="text-2xl font-semibold text-gray-700 mb-4">Marco legal</h2>
+    <p class="text-lg text-gray-600 mb-6">Ley 30512 «Ley de Institutos y Escuelas de Educación Superior y de la Carrera Pública de sus Docentes»</p>
+    <div x-data="{ open: false }" class="w-full">
+      <button @click="open = !open" class="w-full text-left text-lg text-gray-600 font-semibold p-4 bg-gray-200 rounded-lg focus:outline-none">
+        Artículo 42 - Información obligatoria
+        <svg class="w-5 h-5 inline-block ml-2 transition-transform duration-200 transform" :class="{'rotate-180': open}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div x-show="open" x-transition class="p-4 bg-white rounded-lg shadow-md mt-2">
+        <p class="text-lg text-gray-600 mb-4">
+          Los IES y EES públicos y privados tienen la obligación de publicar en sus portales institucionales, en forma permanente y actualizada, sin perjuicio de la exigida por las normas de la materia, la información correspondiente como mínimo a:
+        </p>
+        <ol class="list-decimal list-inside text-lg text-gray-600 mb-8 space-y-2">
+          {portalTransparenciaData.articulo42.map(item => (
+            <li>{item}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+
+    <div class="w-full mt-8">
+      <div class="flex justify-between items-center mb-4">
+        <label for="search" class="block text-sm font-medium text-gray-700">Buscar:</label>
+        <input type="text" id="search" placeholder="Buscar..." class="block w-full max-w-xs py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow-md rounded-lg">
+          <thead>
+            <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+              <th class="py-3 px-6 text-left">AÑO ACADÉMICO 2022</th>
+              <th class="py-3 px-6 text-right">ARCHIVOS</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable" class="text-gray-600 text-sm font-light">
+            {portalTransparenciaData.anioAcademico2022.map(item => (
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left">{item.title}</td>
+                <td class="py-3 px-6 text-right"><a href={item.url} class="text-red-500 hover:underline">Examinar</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-4 text-gray-600">
+        Mostrando desde 1 hasta <span id="totalRecords">{portalTransparenciaData.anioAcademico2022.length}</span> de <span>{portalTransparenciaData.anioAcademico2022.length}</span> registros
+      </div>
+    </div>
+  </div>
+</Container>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const input = document.getElementById('search') as HTMLInputElement;
+    const table = document.getElementById('dataTable');
+    const totalRecords = document.getElementById('totalRecords');
+    if (!input || !table || !totalRecords) return;
+
+    const tr = table.getElementsByTagName('tr');
+    let visibleCount = tr.length;
+
+    input.addEventListener('input', function () {
+      const filter = input.value.toLowerCase();
+      visibleCount = 0;
+
+      for (let i = 0; i < tr.length; i++) {
+        const td = tr[i].getElementsByTagName('td')[0];
+        if (td) {
+          const textValue = td.textContent || td.innerText;
+          if (textValue.toLowerCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+            visibleCount++;
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+      totalRecords.innerText = visibleCount.toString();
+    });
+  });
+</script>
