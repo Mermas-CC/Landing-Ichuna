@@ -7,9 +7,14 @@ import noticiasData from '../components/Data/noticias.json';
   <div class="relative flex flex-col-reverse items-center md:flex-row mt-0 md:mt-16 ms:mt-0" id="hero">
     <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
       <div class="text-left space-y-3">
-        <h1 class="mt-8 mb-8 text-4xl font-medium leading-none md:text-5xl">INSTITUTO DE EDUCACION SUPERIOR PEDAGOGICO PUBLICO, <span class="text-red dark:text-yellow-400">ALIANZA ICHUÑA BÉLGICA</span></h1>
-        <p class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12">Nos comprometemos a ofrecer una educación excepcional en un ambiente enriquecedor. ¡Explore, aprenda y crezca con nosotros!</p>
-        <a class="px-9 py-5 bg-zinc-900 hover:bg-red text-black hover:text-black rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex" rel="noopener noreferrer" href="/portalTransparencia" target="_blank">
+        <h1 class="mt-8 mb-8 text-4xl font-medium leading-none md:text-5xl text-black">
+          INSTITUTO DE EDUCACION SUPERIOR PEDAGOGICO PUBLICO,
+          <span class="text-yellow-300 dark:text-yellow-200">ALIANZA ICHUÑA BÉLGICA</span>
+        </h1>
+        <p class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12 text-gray-500">
+          Nos comprometemos a ofrecer una educación excepcional en un ambiente enriquecedor. ¡Explore, aprenda y crezca con nosotros!
+        </p>
+        <a class="px-9 py-5 bg-yellow-300 hover:bg-red-500 text-black hover:text-white rounded-2xl inline-flex items-center gap-2.5" rel="noopener noreferrer" href="/portalTransparencia" target="_blank">
           <h2 class="text-center text-xl font-normal leading-7">Portal Transparencia</h2>
         </a>
       </div>
@@ -30,21 +35,21 @@ import noticiasData from '../components/Data/noticias.json';
         <!-- Slider indicators -->
         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           {noticiasData.map((_, index) => (
-            <button type="button" class="w-3 h-3 rounded-full" aria-current={index === 0 ? 'true' : 'false'} aria-label={`Slide ${index + 1}`} data-carousel-slide-to={index}></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600" aria-current={index === 0 ? 'true' : 'false'} aria-label={`Slide ${index + 1}`} data-carousel-slide-to={index}></button>
           ))}
         </div>
         <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
             </svg>
             <span class="sr-only">Previous</span>
           </span>
         </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
             </svg>
             <span class="sr-only">Next</span>

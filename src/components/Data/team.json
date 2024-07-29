@@ -2,7 +2,7 @@
     "team":
     [
         {
-            "title": "DIRECTOR GENERAL",
+            "title": "DIRECTOR EJECUTIVO",
             "name": "PARI ARCAYA, JOSÉ HORACIO",
             "profile": "https://aib.edu.pe/wp-content/uploads/2023/05/45150025_1951149584973086_6098381702327959552_n-150x150.jpg",
             "correo": "joselopari.20@gmail.com",
@@ -74,6 +74,13 @@
         {
             "title": "JEFE DE UNIDAD DE BIENESTAR Y EMPLEABILIDAD",
             "name": "MORALES PACHECO, NATALIA LUISA",
+            "profile": "./",
+            "correo": "joselopari.20@gmail.com",
+            "telefono": "910124372"
+        },
+        {
+            "title": "ESTUDIANTE",
+            "name": "ELMER ANDRES",
             "profile": "./",
             "correo": "joselopari.20@gmail.com",
             "telefono": "910124372"

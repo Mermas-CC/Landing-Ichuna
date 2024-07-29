@@ -1,20 +1,20 @@
 ---
 import Container from "./Container.astro"
 ---
-<footer class="bg-zinc-800 bg-fixed bg-bottom text-white">
+<footer class="bg-black bg-fixed bg-bottom text-white mt-16">
     <Container>
-    <div class="py-6">
-        <div class="flex flex-col items-center justify-between md:flex-row">
-            <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img class="w-auto" src="/logo_-removebg-preview.png" alt="Logo">
-            </div>
-            <div class="flex mt-4 md:m-0">
-                <div class="-mx-4">
-                    @ <span id="currentYear"></span> ALIANZA ICHUÑA BELGICA | All rigths reserved </div>
+        <div class="py-6">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img class="w-auto" src="/logo_-removebg-preview.png" alt="Logo">
+                </div>
+                <div class="flex mt-4 md:m-0 text-center text-yellow-400">
+                    <div class="-mx-4">
+                        © <span id="currentYear"></span> ALIANZA ICHUÑA BELGICA | All rights reserved
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </Container>
 </footer>
 

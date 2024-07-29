@@ -1,5 +1,5 @@
 ---
-import Container from "./Container.astro"
+import Container from "./Container.astro";
 import Topic from "./Topic.astro";
 import teamData from './Data/team.json';
 import Collapse from "./Collapse.astro";
@@ -8,42 +8,40 @@ import Collapse from "./Collapse.astro";
 <Container>
 
     <div class="relative flex flex-col items-center mt-16" id="institucional">
-        <Topic title="Directorio Institucional" description="">
-        </Topic>
+        <Topic title="Directorio Institucional" description="Conoce a los miembros del equipo directivo y administrativo del Instituto." />
     </div>
-    <div class="relative flex flex-col items-center mb-8" id="institucional">
+
+    <div class="relative flex flex-col items-center mb-8">
         <div class="flex items-center my-4 w-full">
-          <div class="flex-grow border-t border-gray-300"></div>
-          <span class="mx-4 text-gray-500">
+          <div class="flex-grow border-t border-yellow-300"></div>
+          <span class="mx-4 text-yellow-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
             </svg>
           </span>
-          <div class="flex-grow border-t border-gray-300"></div>
+          <div class="flex-grow border-t border-yellow-300"></div>
         </div>
-        Pruebita de Directorio Institucional
+        <h2 class="text-2xl font-bold text-black">Directorio Institucional</h2>
     </div>
 
     <div class="flex-row items-center py-5" id="team">
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6">
         {
-        teamData.team.map(({ title, correo, name, telefono, profile} ) => (
-        <div class="px-[35px] py-10 bg-white rounded-[45px] shadow-card border border-zinc-900 flex flex-col justify-start items-start gap-2.5 text-black">
-            <div class="flex-col justify-start items-start gap-7 flex">
-                <div class="self-stretch justify-start items-start inline-flex">
-                    <div class="grow shrink basis-0 justify-start items-center gap-8 flex">
-                        <div class="h-[102.82px] w-[102.82px] left-0 top-0 relative">
-                            <img src={profile !== "./" ? profile : "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png"} alt={name} class="h-full w-full object-cover rounded-full"/>
-                        </div>
-                        <div class="flex-col justify-end items-start inline-flex">
-                            <div class="text-lg font-normal">{title}</div>
-                            <div class="text-xl font-medium">{name}</div>
-                        </div>
+        teamData.team.map(({ title, correo, name, telefono, profile }) => (
+        <div class="px-6 py-8 bg-white rounded-lg shadow-lg border border-gray-200 flex flex-col justify-start items-start gap-4 text-black">
+            <div class="flex flex-col justify-start items-start gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-28 h-28 relative">
+                        <img src={profile !== "./" ? profile : "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png"} alt={name} class="h-full w-full object-cover rounded-full"/>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <div class="text-lg font-semibold text-yellow-900">{title}</div>
+                        <div class="text-xl font-bold text-black">{name}</div>
                     </div>
                 </div>
-                <hr class="w-full border border-black"/>
-                <p class="text-sm md:text-lg">Correo: {correo}</p>
-                <p class="text-sm md:text-lg">Telefono: {telefono}</p>
+                <hr class="w-full border border-yellow-300"/>
+                <p class="text-sm md:text-base text-gray-700">Correo: <a href={`mailto:${correo}`} class="text-yellow-600 hover:underline">{correo}</a></p>
+                <p class="text-sm md:text-base text-gray-700">Teléfono: {telefono}</p>
             </div>
         </div>
         ))

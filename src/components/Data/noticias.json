@@ -27,8 +27,17 @@
       "descripcion": "Descripción de la Noticia 3."
     },
     {
-        "id": 3,
+        "id": 4,
         "titulo": "Noticia 3",
+        "imagen": "https://aib.edu.pe/wp-content/uploads/2023/06/jose-1024x1024.jpg",
+        "fecha": "2024-07-26",
+        "url": "https://example.com/noticia-3",
+        "urlImg": "https://example.com/noticia-3-img",
+        "descripcion": "Descripción de la Noticia 3."
+      },
+      {
+        "id": 4,
+        "titulo": "pruebita 3",
         "imagen": "https://aib.edu.pe/wp-content/uploads/2023/06/jose-1024x1024.jpg",
         "fecha": "2024-07-26",
         "url": "https://example.com/noticia-3",
