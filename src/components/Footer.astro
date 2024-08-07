@@ -1,16 +1,38 @@
 ---
 import Container from "./Container.astro"
 ---
-<footer class="bg-black bg-fixed bg-bottom text-white mt-16">
+<footer class="bg-black text-white mt-16">
     <Container>
         <div class="py-6">
-            <div class="flex flex-col items-center justify-between md:flex-row">
-                <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img class="w-auto" src="/logo_-removebg-preview.png" alt="Logo">
+            <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
+                <!-- Primera columna: Mapa y Información de ubicación -->
+                <div class="flex flex-col items-center md:w-1/2 md:items-start md:pr-4">
+                    <h3 class="text-lg font-semibold mb-2">Ubicación</h3>
+                   
+                    <!-- Inserta el mapa aquí -->
+                    <div class="relative w-full max-w-md h-40 mb-4">
+                        <iframe class="absolute inset-0 w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799126725!2d-74.25986500153072!3d40.69767006394354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1aeb4b7433%3A0x9a4a3e68985c1e3!2sNew%20York%2C%20NY%201001%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1641395893126!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
-                <div class="flex mt-4 md:m-0 text-center text-yellow-400">
-                    <div class="-mx-4">
-                        © <span id="currentYear"></span> ALIANZA ICHUÑA BELGICA | All rights reserved
+
+                <!-- Segunda columna: Logo y derechos de autor -->
+                <div class="flex flex-col items-center md:w-1/2 text-center md:text-right">
+                    <div class="flex justify-center mb-4">
+                        <img class="h-16 w-auto" src="/logo_-removebg-preview.png" alt="Logo"> <!-- Ajusta el tamaño del logo aquí -->
+                    </div>
+                    <div class="text-yellow-400 mb-2">
+                        <p class="text-sm">© <span id="currentYear"></span> ALIANZA ICHUÑA BELGICA</p>
+                        <p class="text-sm">Todos los derechos reservados</p>
+                        
+                    </div>
+                    <div class="text-gray-300 mb-4 text-center md:text-center">
+                        <p class="mb-2">Dirección: Av. Ejemplo 123, Ciudad, País</p>
+                        <p class="mb-2">Teléfono: (123) 456-7890</p>
+                        <p class="mb-2">Email: contacto@ejemplo.com</p>
+                    </div>
+                    
+                    <div class="text-gray-300">
+                        <p class="text-sm">Información adicional o mensaje personalizado aquí.</p>
                     </div>
                 </div>
             </div>

@@ -5,28 +5,28 @@ const links = [
     url: '/institucional',
     dropdown: [
       { name: 'Historia', url: '/history' },
-      { name: 'Mision y Visión', url: '/misionvision' },
+      { name: 'Misión y Visión', url: '/misionvision' },
       { name: 'Directorio Institucional', url: '/members' },
-      { name: 'Galeria de Imagenes', url: '/galeria' }
+      { name: 'Galería de Imágenes', url: '/galeria' }
     ]
   },
   {
     name: 'Programas de Estudio',
     url: '/programa_estudios',
     dropdown: [
-      { name: 'Educacion Inicial Intercultural Bilingue', url: '/programa_de_estudios/1' },
-      { name: 'Educacion Primaria Intercultural Bilingue', url: '/programa_de_estudios/2' },
-      { name: 'Idiomas Especialidad Ingles', url: '/programa_de_estudios/3' }
+      { name: 'Educación Inicial Intercultural Bilingüe', url: '/programa_de_estudios/1' },
+      { name: 'Educación Primaria Intercultural Bilingüe', url: '/programa_de_estudios/2' },
+      { name: 'Idiomas Especialidad Inglés', url: '/programa_de_estudios/3' }
     ]
   },
   {
     name: 'Procesos Académicos',
     url: '/procesos_academicos',
     dropdown: [
-      { name: 'Proceso de Admision', url: '/proceso_academico/Proceso_de_Admisión' },
-      { name: 'Proceso de Matricula', url: '/proceso_academico/Proceso_de_Matrícula' },
-      { name: 'Proceso de Titulacion', url: '/proceso_academico/Proceso_de_Titulación' },
-      { name: 'Formacion Continua', url: '/proceso_academico/Formación_Continua' }
+      { name: 'Proceso de Admisión', url: '/proceso_academico/Proceso_de_Admisión' },
+      { name: 'Proceso de Matrícula', url: '/proceso_academico/Proceso_de_Matrícula' },
+      { name: 'Proceso de Titulación', url: '/proceso_academico/Proceso_de_Titulación' },
+      { name: 'Formación Continua', url: '/proceso_academico/Formación_Continua' }
     ]
   },
   {
@@ -49,19 +49,18 @@ const links = [
   }
 ];
 ---
-
-<header x-data="{ shrink: false, mobileMenuOpen: false }" @scroll.window="shrink = (window.pageYOffset > 100)" class="fixed top-0 left-0 w-full z-50 bg-white text-black shadow-md transition-all duration-500" :class="{ 'py-3': shrink, 'py-8': !shrink }">
-  <nav class="container mx-auto flex justify-between items-center">
+<header x-data="{ shrink: false, mobileMenuOpen: false }" @scroll.window="shrink = (window.pageYOffset > 100)" class="fixed top-0 left-0 w-full z-50 bg-white text-black shadow-md transition-all duration-500" :class="{ 'py-3': shrink, 'py-6': !shrink }">
+  <nav class="container mx-auto flex justify-between items-center px-2 sm:px-4">
     <a href="/" @click.prevent="location.href = '/'">
       <img src="/./logo_-removebg-preview.png" alt="Logo" class="h-10 transition-transform duration-500 transform ease-in-out" :class="shrink ? 'scale-100' : 'scale-150'" />
     </a>
-    <div class="hidden space-x-4 md:flex">
+    <div class="hidden md:flex space-x-4">
       {links.map(link => (
         <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
-          <a :class="open ? 'bg-yellow-400 text-black' : 'text-black'" href={link.url} class="py-2 px-4 hover:text-black hover:bg-yellow-300 rounded focus:outline-none transition-colors duration-300">
+          <a :class="open ? 'bg-yellow-400 text-black' : 'text-black'" href={link.url} class="py-2 px-3 rounded hover:bg-yellow-300 focus:outline-none transition-colors duration-300">
             {link.name}
             {link.dropdown && (
-              <svg class="inline-block ml-2 h-4 w-4" :class="open ? 'transform rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="inline-block ml-2 h-4 w-4 transition-transform duration-300" :class="open ? 'transform rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             )}
@@ -87,33 +86,39 @@ const links = [
         </svg>
       </button>
     </div>
-    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="fixed inset-0 z-40 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white">
+    <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" class="fixed inset-0 z-40 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white px-4">
       <button @click="mobileMenuOpen = false" class="absolute top-4 right-4 text-white focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-      {links.map(link => (
-        <div x-data="{ open: false }" class="w-full">
-          <div @click.prevent="open = !open" class="block py-4 text-xl text-white w-full text-center hover:bg-yellow-400 transition-colors duration-300">
-            {link.name}
-            {link.dropdown && (
-              <svg class="inline-block ml-2 h-4 w-4" :class="open ? 'transform rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
+      <div class="w-full">
+        {links.map(link => (
+          <div x-data="{ open: false }" class="w-full">
+            <div @click.prevent="open = !open" class="block py-4 text-xl text-white w-full text-center hover:bg-yellow-400 transition-colors duration-300">
+              {link.name}
+              {link.dropdown && (
+                <svg class="inline-block ml-2 h-4 w-4 transition-transform duration-300" :class="open ? 'transform rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              )}
+            </div>
+            {link.dropdown ? (
+              <div x-show="open" x-transition class="w-full bg-yellow-300">
+                {link.dropdown.map(item => (
+                  <a href={item.url} class="block py-2 text-lg text-black hover:bg-red-500 hover:text-white transition-colors duration-300">
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <a href={link.url} class="block py-4 text-xl text-white w-full text-center hover:bg-yellow-400 transition-colors duration-300">
+                {link.name}
+              </a>
             )}
           </div>
-          {link.dropdown && (
-            <div x-show="open" x-transition class="w-full bg-yellow-300">
-              {link.dropdown.map(item => (
-                <a href={item.url} class="block py-2 text-lg text-black hover:bg-red-500 hover:text-white transition-colors duration-300">
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </nav>
 </header>

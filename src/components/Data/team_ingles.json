@@ -1,0 +1,68 @@
+{
+  "team": [
+    {
+      "title": "Prof.",
+      "name": "Bertha Flora Aguilar Pineda",
+      "profile": "./",
+      "correo": "berthaaguilarp@gmail.com",
+      "telefono": "958 089 661",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Lic.",
+      "name": "Cipriana Ccallancho Calcina",
+      "profile": "./",
+      "correo": "",
+      "telefono": "928 245 643",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Prof.",
+      "name": "Karen Moncado Alanoca",
+      "profile": "./",
+      "correo": "",
+      "telefono": "930 283 766",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Prof.",
+      "name": "Elsa Viviana Cuela Santos",
+      "profile": "./",
+      "correo": "",
+      "telefono": "953 770 562",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Prof.",
+      "name": "Hayde Zamalloa Ramirez",
+      "profile": "./",
+      "correo": "",
+      "telefono": "956 581 271",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Prof.",
+      "name": "Felícitas Margarita Macedo Quispe",
+      "profile": "./",
+      "correo": "",
+      "telefono": "",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Prof.",
+      "name": "Rosa María Torres Apaza",
+      "profile": "./",
+      "correo": "",
+      "telefono": "954 111 924",
+      "department": "Educación Inicial"
+    },
+    {
+      "title": "Prof.",
+      "name": "Gladys Arce Apaza",
+      "profile": "./",
+      "correo": "",
+      "telefono": "971 009 044",
+      "department": "Educación Inicial"
+    }
+  ]
+}

@@ -1,117 +1,166 @@
 {
-    "team":
-    [
-        {
-            "title": "DIRECTOR EJECUTIVO",
-            "name": "PARI ARCAYA, JOSÉ HORACIO",
-            "profile": "https://aib.edu.pe/wp-content/uploads/2023/05/45150025_1951149584973086_6098381702327959552_n-150x150.jpg",
-            "correo": "joselopari.20@gmail.com",
-            "telefono": "910124372"
-        },
-        {
-            "title": "JEFE DE UNIDAD ACADÉMICA",
-            "name": "PARIZACA CHAMBILLA, SABAS",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "JEFE DE UNIDAD DE ADMINISTRACIÓN",
-            "name": "CHALCO CHAMBILLA, ANA MARIA",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "SECRETARIO ACADÉMICO",
-            "name": "CENTENO PALOMINO, RICHARD",
-            "profile": "https://aib.edu.pe/wp-content/uploads/2023/06/RichardCenteno-R.jpg",
-            "correo": "centenori@gmail.com",
-            "telefono": "944958793"
-        },
-        {
-            "title": "COORDINADORA DE ÁREA ACADÉMICA DE EDUCACIÓN INICIAL INTERCULTURAL BILINGÜE",
-            "name": "NINA MARCA, YOSY",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "COORDINADOR DE ÁREA ACADÉMICA DE EDUCACIÓN PRIMARIA INTERCULTURAL BILINGÜE",
-            "name": "MAMANI CHOQUEHUANCA, HENRY",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "COORDINADORA DE ÁREA DE EDUCACIÓN EN IDIOMAS, ESPECIALIDAD INGLÉS",
-            "name": "MAMANI ZENTENO, JENNY MARISOL",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "COORDINADOR DE ÁREA DE CALIDAD",
-            "name": "MAYTA LARICANO, ZENON",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "JEFE UNIDAD DE FORMACIÓN CONTINUA",
-            "name": "AGUILAR ESQUICHE, ROSA BEL",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "JEFE DE UNIDAD DE INVESTIGACIÓN",
-            "name": "LOPEZ CASTILLO, ROCIO",
-            "profile": "./",
-            "correo": "",
-            "telefono": ""
-        },
-        {
-            "title": "JEFE DE UNIDAD DE BIENESTAR Y EMPLEABILIDAD",
-            "name": "MORALES PACHECO, NATALIA LUISA",
-            "profile": "./",
-            "correo": "joselopari.20@gmail.com",
-            "telefono": "910124372"
-        },
-        {
-            "title": "ESTUDIANTE",
-            "name": "ELMER ANDRES",
-            "profile": "./",
-            "correo": "joselopari.20@gmail.com",
-            "telefono": "910124372"
-        }
-
-    ],
-    "process":
-    [
-        {
-            "label": "Consultation",
-            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
-        },
-        {
-            "label": "Research",
-            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
-        },
-        {
-            "label": "Implementation",
-            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
-        },
-        {
-            "label": "Optimization",
-            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
-        },
-        {
-            "label": "Reporting",
-            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
-        },
-        {
-            "label": "Improvement",
-            "content": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
-        }
+    "team": [
+      {
+        "title": "Director General",
+        "name": "Daniel Huacho Maquera",
+        "profile": "/team/director.jpeg",
+        "correo": "",
+        "telefono": "953 035 823"
+      },
+      {
+        "title": "Jefe de Unidad Académica",
+        "name": "Sabas Parizaca Chambilla",
+        "profile": "./",
+        "correo": "sabasparizacachambilla1@gmail.com",
+        "telefono": "950 723 707"
+      },
+      {
+        "title": "Coordinadora de Área Académica de Educación Inicial Intercultural Bilingüe",
+        "name": "Cipriana Ccallancho Calcina",
+        "profile": "./",
+        "correo": "",
+        "telefono": "928 245 643"
+      },
+      {
+        "title": "Coordinadora de Área Académica de Educación Primaria Intercultural Bilingüe",
+        "name": "Rocío Lopez Castillo",
+        "profile": "./",
+        "correo": "rocioclopez7@gmail.com",
+        "telefono": "959 367 154"
+      },
+      {
+        "title": "Coordinador de Área Académica de Educación en Idiomas Especialidad Inglés",
+        "name": "Zenon Mayta Laricano",
+        "profile": "./",
+        "correo": "znnmyt@gmail.com",
+        "telefono": "999 333 334"
+      },
+      {
+        "title": "Secretario Académico",
+        "name": "Ruben Vidal Quispe",
+        "profile": "./",
+        "correo": "rubenvidalquispe@hotmail.com",
+        "telefono": "976 723 934"
+      },
+      {
+        "title": "Coordinadora de Área de Calidad",
+        "name": "Mary Luz Arocutipa Chambilla",
+        "profile": "./",
+        "correo": "",
+        "telefono": "934 595 438"
+      },
+      {
+        "title": "Jefe de Unidad de Formación Continua",
+        "name": "Jonatan Ventura Apaza",
+        "profile": "./",
+        "correo": "jonatanventuraapaza@gmail.com",
+        "telefono": "993 297 705"
+      },
+      {
+        "title": "Jefe de Unidad de Investigación",
+        "name": "Edwin C. Chambilla Condori",
+        "profile": "./",
+        "correo": "",
+        "telefono": "938 474 891"
+      },
+      {
+        "title": "Coordinador del Área de Bienestar y Empleabilidad",
+        "name": "Homar Escobar Centeno",
+        "profile": "./",
+        "correo": "homarescobar24@gmail.com",
+        "telefono": "953 771 728"
+      },
+      {
+        "title": "Coordinador de Área de Práctica Pre Profesional e Investigación",
+        "name": "René Cosi Cosi",
+        "profile": "./",
+        "correo": "",
+        "telefono": "988 528 836"
+      },
+      {
+        "title": "Administrador del IESPP",
+        "name": "Lenin Vicente Ventura Cari",
+        "profile": "./",
+        "correo": "",
+        "telefono": "998 445 823"
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Lenin Vicente Ventura Cari",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Santos Pelé Mamani Ramos",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Leoncio Cari Casilla",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Sofia Veneranda Pari Sotomayor",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Fidel Mamani Roque",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Gloria Giovana Pari Bautista",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Personal Administrativo",
+        "name": "Sayda Mamani Benegas Mamani",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Enfermera",
+        "name": "Yuli Norma Ventura Tala",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Psicólogo",
+        "name": "Juniors Joel Flores Aquino",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Asistenta Social",
+        "name": "Vilma Valeriano Turpo",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      },
+      {
+        "title": "Dinamizador",
+        "name": "Adderli Mamani Hancco",
+        "profile": "./",
+        "correo": "",
+        "telefono": ""
+      }
     ]
-}
+  }
+  

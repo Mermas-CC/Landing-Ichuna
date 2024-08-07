@@ -1,22 +1,56 @@
 ---
-import Container from "./Container.astro"
-import Topic from "./Topic.astro"
+import Container from "./Container.astro";
+import Topic from "./Topic.astro";
 ---
+
 <Container>
-  <div class="w-full p-12 bg-yellow-200 rounded-[45px] justify-start items-start gap-16 inline-flex text-black mb-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 divide-x-0 md:divide-x divide-y md:divide-y-0 divide-black">
-      <div class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
-        <h1 class="text-3xl text-red-700">Excelencia Académica</h1>
-        <div class="w-full text-lg font-normal">Comprometidos con los más altos estándares académicos, ofrecemos una educación superior impulsada por un profesorado experto.</div>
-      </div>
-      <div class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
-        <h1 class="text-3xl text-red-700">Innovación Educativa</h1>
-        <div class="w-full text-lg font-normal">Adoptamos tecnologías y métodos de enseñanza vanguardistas para enriquecer y modernizar el aprendizaje.</div>
-      </div>
-      <div class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
-        <h1 class="text-3xl text-red-700">Desarrollo Integral</h1>
-        <div class="w-full text-lg font-normal">Promovemos el crecimiento personal y profesional a través de actividades extracurriculares que cultivan habilidades sociales y liderazgo.</div>
-      </div>
+  <div class="w-full p-12 bg-yellow-200 rounded-2xl shadow-lg mb-12">
+<div class="flex items-center justify-center mb-8">
+    <h2 class="text-4xl font-semibold ">Datos Estadisticos</h2>
+  </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Card Section -->
+       
+      {[
+        { title: "Programas de Estudio", target: "3" },
+        { title: "Estudiantes Matriculados al 2024", target: "256" },
+        { title: "Becarios", target: "1" },
+        { title: "Docentes", target: "32" },
+        { title: "Cantidad de Egresados en los Últimos 5 Años (2019-2023)", target: "112" },
+        { title: "Cantidad de Títulos Entregados en los Últimos 5 Años (2019-2023)", target: "57" }
+      ].map((item) => (
+        <div class="flex flex-col items-center gap-6 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:scale-105">
+          <h2 class="text-xl font-semibold text-teal-800 text-center">{item.title}</h2>
+          <div class="text-3xl font-bold text-yellow-900 bg-yellow-100 p-4 rounded-full">
+            <span data-target={item.target}>0</span>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 </Container>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll("[data-target]");
+    counters.forEach(counter => {
+      if (counter instanceof HTMLElement) {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target')!;
+          const count = +counter.innerText;
+
+          const speed = 400; // velocidad de conteo, mayor valor -> más lento
+          const increment = target / speed;
+
+          if(count < target) {
+            counter.innerText = Math.ceil(count + increment).toString();
+            setTimeout(updateCount, 20); // ajusta el tiempo de espera entre actualizaciones
+          } else {
+            counter.innerText = target.toString();
+          }
+        };
+        updateCount();
+      }
+    });
+  });
+</script>

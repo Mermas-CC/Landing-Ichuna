@@ -4,20 +4,38 @@
     "type": "Tutorial",
     "title": "Educación Inicial Intercultural Bilingüe",
     "publish_date": "actualizado al 26 de Julio del 2024",
-    "brief": "El Programa de estudio  de Educación Inicial Intercultural Bilingüe forma docentes con elevado nivel de compromiso con la formación humana, proactivos y de alta sensibilidad social, capaces de conducir y orientar, eficazmente, los procesos educativos escolarizados y no escolarizados de los niños y niñas menores de seis años; influyendo en la manera de ser y actuar de ellos, siendo ejemplo de liderazgo y de un perfil de valores éticos y morales positivos.",
-    "description": "El Programa de estudio de Educación Inicial Intercultural Bilingüe forma docentes con elevado nivel de compromiso con la formación humana, proactivos y de alta sensibilidad social, capaces de conducir y orientar, eficazmente, los procesos educativos escolarizados y no escolarizados de los niños y niñas menores de seis años; influyendo en la manera de ser y actuar de ellos, siendo ejemplo de liderazgo y de un perfil de valores éticos y morales positivos. Incorpora permanentemente los nuevos enfoques pedagógicos y científicos que se forman en el campo de la educación inicial, y desarrolla habilidades, destrezas, conocimientos y actitudes en el profesional de este nivel educativo. Los profesores en Educación Inicial Intercultural Bilingüe ejercen la docencia en centros educativos, institutos superiores, universidades y en otras instituciones relacionadas con la especialidad. Son promotores sociales a través de eventos educativos que incorporan a los padres de familia y la comunidad en la formación inicial del ser humano. Desarrollan investigaciones y proyectos de innovación educativa. Ejercen funciones administrativas y cargos jerárquicos relacionadas con su profesión, en entidades públicas y privadas.",
+    "brief": "El Programa de estudio de Educación Inicial Intercultural Bilingüe forma docentes con elevado nivel de compromiso...",
+    "description": "El Programa de estudio de Educación Inicial Intercultural Bilingüe forma docentes con elevado nivel de compromiso...",
     "author": "Alianza Ichuña Belgica",
     "duration": "10 Semestres Académicos presenciales",
     "hours": "300",
     "credits": "220",
     "professionalTitle": "Profesor de Educación Inicial Intercultural Bilingüe, a nombre de la Nación",
-    "profile": "l Perfil de egreso de la Formación Inicial Docente es la visión común e integral de las competencias profesionales docentes que deben desarrollar los estudiantes progresivamente durante el proceso formativo para ejercer idóneamente la docencia. El Perfil de egreso permite establecer una formación integral especializada basada en la práctica, investigación e innovación, que busca garantizar el desarrollo de competencias en los estudiantes para desenvolverse de manera ética, eficiente y eficaz en su práctica docente, respondiendo a las demandas del sistema educativo. Este perfil de la Formación Inicial Docente se alinea a los dominios y competencias establecidos en el Marco de Buen Desempeño Docente (MBDD). Este marco establece la profesión como un quehacer complejo y reconoce dimensiones compartidas con otras profesiones, pero también delimita las dimensiones que son propias de la docencia. El Perfil de egreso incorpora competencias vinculadas a la formación integral que requieren los docentes en el siglo XXI. Estas son de naturaleza transversal a las competencias profesionales docentes presentadas en el MBDD. Son esenciales para la construcción de la profesionalidad e identidad docente en la Formación Inicial Docente. Para efectos de organización y coherencia del Perfil de egreso, estas se incluyen en el dominio 4 establecido en el MBDD, al que se le ha agregado el término personal. Tales competencias se orientan al fortalecimiento del desarrollo personal, a la gestión de entornos digitales y al manejo de habilidades investigativas que le permitan reflexionar y tomar decisiones para mejorar su práctica pedagógica con base en evidencias. Para la Formación Inicial Docente en educación inicial y primaria Intercultural Bilingüe se han incluido tres competencias comunicativas: se comunica oralmente en lengua indígena u originaria y castellano con diversos interlocutores para desarrollar aprendizajes en diversas situaciones comunicativas; lee diversos tipos de textos escritos en lengua indígena u originaria y castellano con diversos interlocutores para desarrollar aprendizajes en diversas situaciones comunicativas y escribe diversos tipos de textos en lengua indígena u originaria y castellano con diversos interlocutores para desarrollar aprendizajes en diversas situaciones comunicativas. Estas competencias evidencian el progreso del estudiante de FID tanto en lengua indígena u originaria como en castellano a lo largo de su formación profesional.",
+    "profile": "El Perfil de egreso de la Formación Inicial Docente es la visión común e integral de las competencias profesionales docentes...",
     "planImg1": "https://aib.edu.pe/wp-content/uploads/2023/06/image-1.png",
     "planImg2": "https://aib.edu.pe/wp-content/uploads/2023/06/image-3.png",
     "planImg3": "https://aib.edu.pe/wp-content/uploads/2023/06/image-4.png",
     "planImg4": "https://aib.edu.pe/wp-content/uploads/2023/06/image-5.png",
     "planImg5": "",
-    "curriculumLink": "https://iesppaibe-my.sharepoint.com/personal/dinamizadoreva_aib_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN%2FDCBN%20ED%20INICIAL%20EIB%2Epdf&parent=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN&ga=1"
+    "curriculumLink": "https://iesppaibe-my.sharepoint.com/personal/dinamizadoreva_aib_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN%2FDCBN%20ED%20INICIAL%20EIB%2Epdf&parent=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN&ga=1",
+    "professors": [
+      {
+        "name": "Juan Pérez",
+        "profile": "https://example.com/juan-perez.jpg",
+        "title": "Profesor Titular",
+        "email": "juan.perez@example.com",
+        "phone": "123-456-7890",
+        "department": "Educación"
+      },
+      {
+        "name": "Ana Gómez",
+        "profile": "https://example.com/ana-gomez.jpg",
+        "title": "Profesora Asociada",
+        "email": "ana.gomez@example.com",
+        "phone": "123-456-7891",
+        "department": "Educación"
+      }
+    ]
   },
   {
     "id": 2,
@@ -38,9 +56,25 @@
     "planImg3": "https://aib.edu.pe/wp-content/uploads/2023/06/image-9.png",
     "planImg4": "https://aib.edu.pe/wp-content/uploads/2023/06/image-10.png",
     "planImg5": "https://aib.edu.pe/wp-content/uploads/2023/06/image-11.png",
-    "curriculumLink": "https://iesppaibe-my.sharepoint.com/personal/dinamizadoreva_aib_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN%2FDCBN%20ED%20PRIMARIA%20EIB%2Epdf&parent=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN&ga=1"
-    
-    
+    "curriculumLink": "https://iesppaibe-my.sharepoint.com/personal/dinamizadoreva_aib_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN%2FDCBN%20ED%20PRIMARIA%20EIB%2Epdf&parent=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN&ga=1",
+ "professors": [
+      {
+        "name": "Juan Pérez",
+        "profile": "https://example.com/juan-perez.jpg",
+        "title": "Profesor Titular",
+        "email": "juan.perez@example.com",
+        "phone": "123-456-7890",
+        "department": "Educación"
+      },
+      {
+        "name": "Ana Gómez",
+        "profile": "https://example.com/ana-gomez.jpg",
+        "title": "Profesora Asociada",
+        "email": "ana.gomez@example.com",
+        "phone": "123-456-7891",
+        "department": "Educación"
+      }
+    ]
   },
   {
     "id": 3,
@@ -61,6 +95,73 @@
     "planImg3": "https://aib.edu.pe/wp-content/uploads/2023/06/image-14.png",
     "planImg4": "https://aib.edu.pe/wp-content/uploads/2023/06/image-15.png",
     "planImg5": "https://aib.edu.pe/wp-content/uploads/2023/06/image-16.png",
-    "curriculumLink": "https://iesppaibe-my.sharepoint.com/personal/dinamizadoreva_aib_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN%2FDise%C3%B1o%20Curricular%20B%C3%A1sico%20Nacional%202019%20%2D%20Idiomas%20Ingl%C3%A9s%2Epdf&parent=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN&ga=1"
+    "curriculumLink": "https://iesppaibe-my.sharepoint.com/personal/dinamizadoreva_aib_edu_pe/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN%2FDise%C3%B1o%20Curricular%20B%C3%A1sico%20Nacional%202019%20%2D%20Idiomas%20Ingl%C3%A9s%2Epdf&parent=%2Fpersonal%2Fdinamizadoreva%5Faib%5Fedu%5Fpe%2FDocuments%2FDCBN&ga=1",
+    "professors": [
+  {
+    "name": "Bertha Flora Aguilar Pineda",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": "berthaaguilarp@gmail.com",
+    "phone": "958-089-661",
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Cipriana Ccallancho Calcina",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Licenciada",
+    "email": null,
+    "phone": "928-245-643",
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Karen Moncado Alanoca",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": null,
+    "phone": "930-283-766",
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Elsa Viviana Cuela Santos",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": null,
+    "phone": "953-770-562",
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Hayde Zamalloa Ramirez",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": null,
+    "phone": "956-581-271",
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Félícitas Margarita Macedo Quispe",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": null,
+    "phone": null,
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Rosa María Torres Apaza",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": null,
+    "phone": "954-111-924",
+    "department": "Educación Inicial"
+  },
+  {
+    "name": "Gladys Arce Apaza",
+    "profile": "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png",
+    "title": "Profesora",
+    "email": null,
+    "phone": "971-009-044",
+    "department": "Educación Inicial"
+  }
+]
+
   }
 ]

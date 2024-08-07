@@ -9,7 +9,7 @@ import { ViewTransitions } from 'astro:transitions';
 <html lang="en">
   <head>
     <meta property="og:title" content="Instituto Pedagógico Ichuña Bélgica">
-  <meta property="og:description" content="Formación de excelencia en educación con un enfoque innovador. Prepárate para el futuro con nuestros programas académicos de vanguardia.">
+    <meta property="og:description" content="Formación de excelencia en educación con un enfoque innovador. Prepárate para el futuro con nuestros programas académicos de vanguardia.">
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
@@ -20,12 +20,20 @@ import { ViewTransitions } from 'astro:transitions';
       name="description"
       content="Instituto Pedagógico Ichuña Bélgica: Formación de excelencia en educación con un enfoque innovador. Prepárate para el futuro con nuestros programas académicos de vanguardia."
     />
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <ViewTransitions />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <ViewTransitions />
   </head>
   <body class="bg-white font-SpaceGrotesk text-F5F5F5">
     <Navbar />
     <slot />
-    <Footer/>
+    <Footer />
+    
+    <!-- Burbuja de chat de WhatsApp -->
+    <div class="fixed bottom-4 right-4">
+      <a href="https://wa.me/+51957059200" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-110">
+        <img src="/whatsapp.png" alt="">
+      </a>
+    </div>
   </body>
 </html>

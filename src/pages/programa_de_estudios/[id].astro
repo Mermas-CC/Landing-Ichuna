@@ -16,7 +16,7 @@ if (!article) {
   throw new Error(`Article with id ${id} not found`);
 }
 
-const { title, publish_date, description, author, authorImage, duration, hours, credits, professionalTitle, profile, planImg1, planImg2, planImg3, planImg4, planImg5, curriculumLink } = article;
+const { title, publish_date, description, author, authorImage, duration, hours, credits, professionalTitle, profile, planImg1, planImg2, planImg3, planImg4, planImg5, curriculumLink, professors } = article;
 export const prerender = true;
 ---
 
@@ -60,7 +60,7 @@ export const prerender = true;
           </div>
           <div class="flex flex-col items-center gap-4 mt-8">
             {[planImg1, planImg2, planImg3, planImg4, planImg5].filter(Boolean).map((img, index) => (
-              <img  class="w-4/5 rounded-lg" src={img} alt={`Plan de estudios ${index + 1}`} />
+              <img class="w-4/5 rounded-lg" src={img} alt={`Plan de estudios ${index + 1}`} />
             ))}
           </div>
         </div>
@@ -78,7 +78,7 @@ export const prerender = true;
           <h2 class="text-center mb-4 text-3xl font-extrabold text-gray-900">Plan de estudios</h2>
           <div class="flex flex-col items-center gap-4">
             {[planImg1, planImg2, planImg3, planImg4, planImg5].filter(Boolean).map((img, index) => (
-              <img  class="w-4/5 rounded-lg" src={img} alt={`Plan de estudios ${index + 1}`} />
+              <img class="w-4/5 rounded-lg" src={img} alt={`Plan de estudios ${index + 1}`} />
             ))}
           </div>
         </div>
@@ -92,6 +92,30 @@ export const prerender = true;
           </a>
         </div>
       </section>
+
+      {professors && professors.length > 0 && (
+        <section class="bg-white mt-16">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <h2 class="text-center mb-4 text-3xl font-extrabold text-gray-900">Docentes</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {professors.map((professor) => (
+                <div  class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                  <img 
+                    src={ "https://investigacion.unimagdalena.edu.co/Content/Imagenes/userVacio.png"} 
+                    alt={professor.name} 
+                    class="h-24 w-24 rounded-full mb-4 object-cover"
+                  />
+                  <h3 class="text-xl font-semibold text-gray-900">{professor.name}</h3>
+                  <p class="text-sm text-gray-600">{professor.title}</p>
+                  <p class="text-sm text-gray-500">Correo: {professor.email}</p>
+                  <p class="text-sm text-gray-500">Teléfono: {professor.phone}</p>
+                  <p class="text-sm text-gray-500">Departamento: {professor.department}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </Container>
   </main>
 </Layout>
